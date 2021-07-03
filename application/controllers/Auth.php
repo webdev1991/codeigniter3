@@ -9,6 +9,7 @@ class Auth extends CI_Controller {
 
                 $this->load->library('form_validation');
 
+
                 $this->form_validation->set_rules('first_name','First name','required');
                 $this->form_validation->set_rules('last_name','Last name','required');
                 $this->form_validation->set_rules('email','Email','required|valid_email');
@@ -17,7 +18,9 @@ class Auth extends CI_Controller {
 
                 if($this->form_validation->run() == false) {
                         //Here we will load our view
+                        $this->load->view('templates/header');
                         $this->load->view('register');
+                        $this->load->view('templates/footer');
                 } else {
                         //Here we will save data in database
                         //echo "data inserted successfully";

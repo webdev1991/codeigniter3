@@ -1,0 +1,18 @@
+ul.nav.navbar-nav {
+    flex-direction: unset;
+    font-size: 14px;
+}
+
+a.navbar-brand {
+    font-size: 18px;
+    line-height: 20px;
+    height: 50px;
+    padding-top: none;
+    padding-bottom: none;
+    float: none;
+}
+
+a {
+    
+    text-decoration: none;
+}
