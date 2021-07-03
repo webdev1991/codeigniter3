@@ -18,7 +18,7 @@
       <li class="active"><a href="<?php echo base_url(); ?>">Home</a></li>
       <li class="active"><a href="<?php echo base_url(); ?>about">About</a></li>
       <li class="active"><a href="<?php echo base_url().'Auth/register'; ?>">Contact</a></li>
-      <li class="active"><a href="">All Contact</a></li>
+      <li class="active"><a href="<?php echo base_url().'Hello/dispdata'; ?>">All Contact</a></li>
 
     </ul>
   </div>
